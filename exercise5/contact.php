@@ -207,6 +207,46 @@ function test_input($data) {
 ?>
 
 
+<?php
+
+//if there's any user action
+
+	$action = isset($_POST['action']) ? $_POST['action'] : "";
+	if($action=='create'){ //the the user submitted the form
+//include database connection
+	include 'db_connect.php';
+//our insert query query
+
+//$mysqli->real_escape_string() function helps us prevent attacks such as SQL injection
+
+	$query = "insert into users
+	set
+		fullname = '".$mysqli->real_escape_string($_POST['name'])."',
+		nickname = '".$mysqli->real_escape_string($_POST['nickname'])."',
+		email = '".$mysqli->real_escape_string($_POST['email'])."',
+		gender  = '".$mysqli->real_escape_string($_POST['gender'])."',
+		comment  = '".$mysqli->real_escape_string($_POST['comment'])."',
+		number  = '".$mysqli->real_escape_string($_POST['number'])."',
+		home = '".$mysqli->real_escape_string($_POST['home'])."'";
+
+//execute the query
+
+	if( $mysqli->query($query) ) {
+//if saving success
+		echo "User was created.";
+		}else{
+//if unable to create new record
+			echo "Database Error: Unable to create record.";
+		}
+//close database connection
+
+$mysqli->close();
+}
+
+?>
+
+
+
 <h2>PHP Form Validation Example</h2>
 <p><span class="error">* required field.</span></p>
 
