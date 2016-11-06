@@ -341,7 +341,7 @@ echo "Comments: ", $comment;
 	<a href="family.html"target="frameB"> Family-  </a>
 	<a href="educ.html"target="frameB"> Education-  </a>
 	<a href="hobbies.html"target="frameB"> Hobbies and Interests-  </a>
-	<a href="favorites_chel.html"target="frameB"> Favorites-  </a>
+	<a href="favorites.html"target="frameB"> Favorites-  </a>
 	<a href="Trivias.html"target="frameB"> Trivias-  </a>
 </footer>
 
