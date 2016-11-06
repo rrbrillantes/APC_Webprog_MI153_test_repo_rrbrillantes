@@ -26,7 +26,10 @@
 		font-size:20px;
 	}
 	
-	
+	table {
+		margin-top:30px;
+	}
+
 	
 	footer {
 		font-family: Times New Roman;
@@ -34,16 +37,12 @@
 		font-color: white;
 	}
 	
-	p.info {
+	p.edu {
 		font-size: 40px;
 		color: BLACK;
 		font-family: Gigi;
 		text-align: center;
 		font-weight: bold;
-	}
-	
-	table {
-		position: center;
 	}
 	img {
 		margin-right: 20px;
@@ -102,7 +101,7 @@
 	<img src="BASIC.png" width ="80" height ="40"align ="center"/>
 	</a>
 	
-	<a href="home.php" target="_self" align >
+	<a href="Exercise5_Brillantes.php" target="_self" align >
 	<img src="HOME.png" width ="80" height ="40"align ="center"/>
 	</a> 
 	
@@ -110,80 +109,45 @@
 </div>
 
 
+<p class="edu">My Education</p>
 <center>
-<p class="info"> Basic Information </p>
-<table border="0" cellpadding="5" >
-
+<table align="middle" bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="50%" >
+	
+	
 	<tr>
 		<td>
-		<img src="me.jpg" style="float:left" height=300;>
+		<p class="intro stylee">College: </p>
 		</td>
 		
 		<td>
-		<img src="me3.jpg" style="float:left" height=300;>
+		<p class="intro">Asia Pacific College</p>
+		<p class="intro">BS Information Technology - Mobile and Internet Technology</p>
+		<p class="intro">(2013-present)</p>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro stylee">High School:</p>
 		</td>
 		
 		<td>
-		<img src="me2.jpg" style="float:left" height=300;>
+		<p class="intro">Army's Angels Integrated School</p>
+		<p class="intro">(2009-2013)</p>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro stylee">Elementary:</p>
+		</td>
+		
+		<td>
+		<p class="intro">Army's Angels Integrated School</p>
+		<p class="intro">(2003-2009)</p>
 		</td>
 	</tr>
 </table>
-<br>
-<center>
-<table bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="30%">
-
-	<tr>
-		<td>
-		<p class="intro stylee">Fullname: </p>
-		</td>
-		
-		<td>
-		<p class="intro">Rachel Anne Rondena Brillantes</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<p class="intro stylee">Nickname:</p>
-		</td>
-		
-		<td>
-		<p class="intro">Rachel/Chel</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<p class="intro stylee">Birthdate:</p>
-		</td>
-		
-		<td>
-		<p class="intro">March 04, 1997</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<p class="intro stylee">Zodiac Sign:</p>
-		</td>
-		
-		<td>
-		<p class="intro">Pisces</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<p class="intro stylee">Birthplace:</p>
-		</td>
-		
-		<td>
-		<p class="intro">Taytay, Rizal</p>
-		</td>
-	</tr>
-	
-</table>
-
 
 <br>
 <br>

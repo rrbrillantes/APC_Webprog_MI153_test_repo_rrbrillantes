@@ -120,74 +120,6 @@
 	
 </div>
 
-
-
-<center>
-<p class="con">You can reach me through the following sites</p>
-
-<table class="t1" align="middle" bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="30%" style="float:center">
-	<tr>
-		<td> 
-		<p class="intro stylee">Facebook</p>
-		</td>
-	
-		<td>
-		
-		<center><p class="intro stylee"><a href = "https://www.facebook.com/momoxielle" target="_blank"> <img src="fb.png" height="80" align="center"></a><figcaption>Rachel Anne Brillantes</figcaption></center></p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td> 
-		<p class="intro stylee">Twitter</p>
-		</td>
-		
-		<td> 
-		<center><p class="intro stylee"><a href = "https://www.twitter.com/_raimssi" target="_blank"> <img src="twitter.png" height="80" align="center"></a><figcaption>@_raimssi</figcaption></center></p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td> 
-		<p class="intro stylee">Instagram</p>
-		</td>
-		
-		<td>
-		<center><p class="intro stylee"><a href = "https://www.instagram.com/_raimssi" target="_blank"> <img src="insta.png" height="80" align="center"></a><figcaption>@_raimssi</figcaption></center></p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td> 
-		<p class="intro stylee">Youtube</p>
-		</td>
-		
-		<td>
-		<center><p class="intro stylee"><a href = "https://www.youtube.com/channel/UC3jO-jb9FzhcM21GJ-AY4aA" target="_blank"> <img class="net" src="yt.png" height="50" align="center"></a><figcaption>Rachel Anne Brillantes</figcaption></center></p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td> 
-		<p class="intro stylee">Snapchat</p>
-		</td>
-		
-		<td>
-		<center><p class="intro stylee"><img class="net" src="snapchat.png" height="50" align="center"></a><figcaption>@momoxielle</figcaption></center></p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td> 
-		<p class="intro stylee">Gmail</p>
-		</td>
-		
-		<td>
-		<center><p class="intro stylee"><img class="net" src="gmail.png" height="50" align="center"></a><figcaption>Momoxielle@gmail.com</figcaption></center></p>
-		</td>
-	</tr>
-</table>
-
 <center>
 <p class="con">You can also leave a comment here in my page...</p>
 </center>
@@ -374,7 +306,6 @@ echo "Mobile Number: ", $number;
 echo "<br>";
 echo "Comments: ", $comment;
 ?>
-
 
 
 <br>

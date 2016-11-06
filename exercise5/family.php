@@ -112,7 +112,7 @@
 	<img src="BASIC.png" width ="80" height ="40"align ="center"/>
 	</a>
 	
-	<a href="home.php" target="_self" align >
+	<a href="Exercise5_Brillantes.php" target="_self" align >
 	<img src="HOME.png" width ="80" height ="40"align ="center"/>
 	</a> 
 	

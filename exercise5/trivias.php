@@ -6,10 +6,10 @@
 	<style>
 
 	p.intro {
-		font-size: 20px;
+		font-size: 25px;
 		color: #000000;
-		font-family: Goudy Old Style;
-		text-align: Center; 
+		font-family: Garamond;
+		
 	}
 	
 	p.stylee {
@@ -22,8 +22,6 @@
 		table border:0;
 		align:center; 
 		cellpadding:15;
-		font-family: Garamond;
-		font-size:20px;
 	}
 	
 	
@@ -44,6 +42,8 @@
 	
 	table {
 		position: center;
+		text-align:left;
+		width: 50%;
 	}
 	img {
 		margin-right: 20px;
@@ -102,7 +102,7 @@
 	<img src="BASIC.png" width ="80" height ="40"align ="center"/>
 	</a>
 	
-	<a href="home.php" target="_self" align >
+	<a href="Exercise5_Brillantes.php" target="_self" align >
 	<img src="HOME.png" width ="80" height ="40"align ="center"/>
 	</a> 
 	
@@ -111,79 +111,98 @@
 
 
 <center>
-<p class="info"> Basic Information </p>
+<p class="info"> Know more about me! </p>
 <table border="0" cellpadding="5" >
 
 	<tr>
 		<td>
-		<img src="me.jpg" style="float:left" height=300;>
+		<p class="intro" id="trivia1"> What is my favorite color?</p>
 		</td>
-		
 		<td>
-		<img src="me3.jpg" style="float:left" height=300;>
+		<button type="button" onclick="document.getElementById('trivia1').innerHTML = 'I love the color blue and black'">Answer</button>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia2"> What is my favorite pet?</p>
 		</td>
-		
 		<td>
-		<img src="me2.jpg" style="float:left" height=300;>
+		<button type="button" onclick="document.getElementById('trivia2').innerHTML = 'I love dogs!!!'">Answer</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia3"> What is my favorite song?</p>
+		</td>
+		<td>
+		<button type="button" onclick="document.getElementById('trivia3').innerHTML = 'Fearless by Taylor Swift'">Answer</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia4"> Who is my favorite international singer?</p>
+		</td>
+		<td>
+		<button type="button" onclick="document.getElementById('trivia4').innerHTML = 'Taylor Swift! Swiftie here..'">Answer</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia5"> What is my favorite song?</p>
+		</td>
+		<td>
+		<button type="button" onclick="document.getElementById('trivia5').innerHTML = 'Fearless by Taylor Swift'">Answer</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia6"> My dream course is _________</p>
+		</td>
+		<td>
+		<button type="button" onclick="document.getElementById('trivia6').innerHTML = 'Music Production!'">Answer</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia7"> The first country I want to visit is ___________</p>
+		</td>
+		<td>
+		<button type="button" onclick="document.getElementById('trivia7').innerHTML = 'South Korea! I am a Kpop fan just so you know :)'">Answer</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia8"> I want to learn how to play the ___________</p>
+		</td>
+		<td>
+		<button type="button" onclick="document.getElementById('trivia8').innerHTML = 'Guitar and Piano'">Answer</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia9"> I am afraid of _________</p>
+		</td>
+		<td>
+		<button type="button" onclick="document.getElementById('trivia9').innerHTML = 'The ocean'">Answer</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<p class="intro" id="trivia10"> What is my favorite song?</p>
+		</td>
+		<td>
+		<button type="button" onclick="document.getElementById('trivia10').innerHTML = 'Fearless by Taylor Swift'">Answer</button>
 		</td>
 	</tr>
 </table>
-<br>
-<center>
-<table bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="30%">
-
-	<tr>
-		<td>
-		<p class="intro stylee">Fullname: </p>
-		</td>
-		
-		<td>
-		<p class="intro">Rachel Anne Rondena Brillantes</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<p class="intro stylee">Nickname:</p>
-		</td>
-		
-		<td>
-		<p class="intro">Rachel/Chel</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<p class="intro stylee">Birthdate:</p>
-		</td>
-		
-		<td>
-		<p class="intro">March 04, 1997</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<p class="intro stylee">Zodiac Sign:</p>
-		</td>
-		
-		<td>
-		<p class="intro">Pisces</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<p class="intro stylee">Birthplace:</p>
-		</td>
-		
-		<td>
-		<p class="intro">Taytay, Rizal</p>
-		</td>
-	</tr>
-	
-</table>
-
 
 <br>
 <br>
