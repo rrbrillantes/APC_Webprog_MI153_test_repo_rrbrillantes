@@ -132,13 +132,13 @@ if(isset($_POST['btn-save']))
  $name = $_POST['name'];
  $nickname = $_POST['nickname'];
  $email = $_POST['email'];
- $hadd = $_POST['hadd'];
+ $home = $_POST['home'];
 $gender = $_POST['gender']; 
- $cpnum = $_POST['cpnum'];
+ $number = $_POST['number'];
  $comment = $_POST['comment']; 
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(name,nickname,email,hadd,gender,cpnum,comment) VALUES('$name','$nickname','$email','$hadd','$gender','$cpnum','$comment')";
+        $sql_query = "INSERT INTO users(name,nickname,email,home,gender,number,comment) VALUES('$name','$nickname','$email','$home','$gender','$number','$comment')";
  mysqli_query($link, $sql_query);
         
         // sql query for inserting data into database
@@ -157,8 +157,8 @@ $gender = $_POST['gender'];
 	
 <?php
 		// define variables and set to empty values
-		$nameErr = $nicknameErr = $emailErr = $genderErr =$cpnumErr = "";
-		$name = $nickname = $email = $hadd = $gender = $cpnum = $comment = "";
+		$nameErr = $nicknameErr = $emailErr = $genderErr =$numberErr = "";
+		$name = $nickname = $email = $home = $gender = $number = $comment = "";
 		
 		
 		
@@ -201,10 +201,10 @@ $gender = $_POST['gender'];
 
 			
 			
-			if(empty($_POST["hadd"])){
-			  	$hadd = "";
+			if(empty($_POST["home"])){
+			  	$home = "";
 			}else{
-			  	$hadd = test_input($_POST["hadd"]);
+			  	$home = test_input($_POST["home"]);
 			}
 
 			
@@ -217,13 +217,13 @@ $gender = $_POST['gender'];
 			
 			
 
-			if (empty($_POST["cpnum"])) {
-				$cpnumErr = "Mobile number is required";
+			if (empty($_POST["number"])) {
+				$numberErr = "Mobile number is required";
 		  	} else {
-				$cpnum = test_input($_POST["cpnum"]);
-				if(!preg_match("/^[0-9]*$/",$cpnum)){
-					$cpnumErr = "Only numbers are allowed";
-					$cpnum = "";
+				$number = test_input($_POST["number"]);
+				if(!preg_match("/^[0-9]*$/",$number)){
+					$numberErr = "Only numbers are allowed";
+					$number = "";
 				}
 		  	}
 			
@@ -270,7 +270,7 @@ $gender = $_POST['gender'];
 			<span class="error">* <?php echo $emailErr;?></span></td>
     </tr>
 	<tr>
-    <td><textarea name="hadd" placeholder ="home address" rows ="2" cols="30"><?php echo $hadd;?></textarea>></span></td>
+    <td><textarea name="home" placeholder ="home address" rows ="2" cols="30"><?php echo $home;?></textarea>></span></td>
     </tr>
 
 	<tr>
@@ -280,8 +280,8 @@ $gender = $_POST['gender'];
     </tr>
 
 	<tr>
-    <td><input type="text" name="cpnum" placeholder="Cellphone Number" value="<?php echo $cpnum;?>">
-			<span class="error">* <?php echo $cpnumErr;?></span></td>
+    <td><input type="text" name="number" placeholder="Cellphone Number" value="<?php echo $number;?>">
+			<span class="error">* <?php echo $numberErr;?></span></td>
     </tr>
 
 	<tr>
