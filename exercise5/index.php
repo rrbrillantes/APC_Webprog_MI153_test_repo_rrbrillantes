@@ -46,16 +46,16 @@
 	margin: auto;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	font-family:comic sans ms;
-	font-size:25px;
+	font-family: Garamond;
+		font-size:20px;
 	vertical-align:baseline;
 	}
 
 #hey {
 	vertical-align:baseline;
 	padding-left:80px;
-	font-family:comic sans ms;
-	font-size:25px;
+	font-family: Garamond;
+		font-size:20px;
 	text-align:center;
 	}
 </style>
