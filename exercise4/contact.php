@@ -143,6 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
       $nameErr = "Only letters and white space allowed"; 
+	  $name = "";
     }
   }
   
@@ -153,6 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
       $nicknameErr = "Only letters and white space allowed"; 
+	  $nickname = "";
     }
   }
 
@@ -161,9 +163,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    // check if e-mail address is well-formed
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $emailErr = "Invalid email format"; 
+	  $email = "";
     }
   }	else {
 		$emailErr = "Email is required";
+		$email = "";
   }
   
 
@@ -172,8 +176,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$number = test_input($_POST["number"]);
 		if (strlen($number) < 11) {
 		$numberErr = "invalid mobile number";
+		$number = "";
 			if (!$number[0]) {
 				$numberErr = "invalid format";
+				$number = "";
 			}
 		}
 	} else{
