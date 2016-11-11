@@ -166,6 +166,9 @@ function delete_id(id)
     <?php
  $sql_query="SELECT * FROM users";
  $result_set=mysqli_query($link, $sql_query);
+ if (!$result_set) { // add this check.
+    die('Invalid query: ' . mysql_error());
+}
  while($row=mysqli_fetch_row($result_set))
  {
   ?>
