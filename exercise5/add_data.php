@@ -74,55 +74,16 @@
 		align: center;
 		position: relative;
 	}
+	
+	#btn {
+		font-family: Garamond;
+		font-size:17px;
+		background-color: white;
+	}
 </style>
 <body>
-<center>
-<img class="all" src="ALL.png" width ="500" height ="130"/>
-<br>
-<center>
-<div id ="head">
-	
-	<a href="form.php" target="_self" align >
-	<img src="FORM.png" width ="80" height ="40"align ="center"/>
-	</a> 
-	
-	<a href="contact.php" target="_self" align >
-	<img src="CONTACT.png" width ="80" height ="40"align ="center"/>
-	</a> 
-	
-	<a href="trivias.php" target="_self" align >
-	<img src="TRIVIAS.png" width ="80" height ="40"align ="center"/>
-	</a>
-	
-	<a href="favorites.php" target="_self" align >
-	<img src="FAVE.png" width ="80" height ="40"align ="center"/>
-	</a> 
-	
-	
-	<a href="hobbies.php" target="_self" align >
-	<img src="HOBBIES.png" width ="80" height ="40"align ="center"/></a> 
 
-	<a href="educ.php" target="_self" align >
-	<img src="EDUC.png" width ="80" height ="40"align ="center"/></a> 
-
-	<a href="family.php" target="_self" align >
-	<img src="FAM.png" width ="80" height ="40"align ="center"/>
-	</a>
-	
-	<a href="personalinfo.php" target="_self" align >
-	<img src="BASIC.png" width ="80" height ="40"align ="center"/>
-	</a>
-	
-	<a href="Exercise5_Brillantes.php" target="_self" align >
-	<img src="HOME.png" width ="80" height ="40"align ="center"/>
-	</a> 
-	
-	
-</div>
-
-<div id="eto">
 <center>
-<h1>Form</h1>
 
 <?php
 include_once 'dbconfig.php';
@@ -152,8 +113,6 @@ $gender = $_POST['gender'];
     </div>
 </div>
 <div id="body">
-
-<p id="form">enter the following details: </p>
 	
 <?php
 		// define variables and set to empty values
@@ -247,7 +206,7 @@ $gender = $_POST['gender'];
 	
 	
 			<p><span class="error">* required field.
-			<u><strong>*Don't forget to save and cick the Display data below </u></strong></span></p>
+			<br>*Don't forget to save and cick the Display data below</span></p>
 			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 		
  <div id="content">
@@ -257,44 +216,63 @@ $gender = $_POST['gender'];
    
     </tr>
     <tr>
-    <td><input type="text" name="name" placeholder="Name" value="<?php echo $name;?>">
+		<td>
+			<label>Name:</label>
+		</td>
+		<td><input type="text" name="name" placeholder="Name" value="<?php echo $name;?>">
 			<span class="error">* <?php echo $nameErr;?></span>
-			<br><br> </td>
+		</td>
     </tr>
     <tr>
+		<td>
+			<label>Nickname:</label>
+		</td>
     <td><input type="text" name="nickname" placeholder="Nick name" value="<?php echo $nickname;?>">
 			<span class="error">* <?php echo $nicknameErr;?></span></td>
     </tr>
     <tr>
+		<td>
+			<label>Email:</label>
+		</td>
     <td><input type="text" name="email" placeholder="Email" value="<?php echo $email;?>">
 			<span class="error">* <?php echo $emailErr;?></span></td>
     </tr>
 	<tr>
-    <td><textarea name="home" placeholder ="home address" rows ="2" cols="30"><?php echo $home;?></textarea>></span></td>
+		<td>
+			<label>Home:</label>
+		</td>
+		<td><textarea name="home" placeholder ="home address" rows ="2" cols="30"><?php echo $home;?></textarea></span></td>
     </tr>
 
 	<tr>
-    <td><input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+		<td>
+			<label>Gender:</label>
+		</td>
+		<td><input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
 			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
 			<span class="error">* <?php echo $genderErr;?></span>
     </tr>
 
 	<tr>
-    <td><input type="text" name="number" placeholder="Cellphone Number" value="<?php echo $number;?>">
+		<td>
+			<label>Mobile Number:</label>
+		</td>
+		<td><input type="text" name="number" placeholder="Cellphone Number" value="<?php echo $number;?>">
 			<span class="error">* <?php echo $numberErr;?></span></td>
     </tr>
 
 	<tr>
-    <td><textarea name="comment" placeholder="Comment" rows="5" cols="40"><?php echo $comment;?></textarea></span></td>
+		<td>
+			<label>Comment:</label>
+		</td>
+		<td><textarea name="comment" placeholder="Comment" rows="5" cols="40"><?php echo $comment;?></textarea></span></td>
     </tr>
-	
-    <tr>
-    <td><button type="submit" name="btn-save" onclick="location.href='index.php';"><strong>SAVE</strong></button>
-	<button type="button" onclick="location.href='index.php';"><strong>DISPLAY DATA</strong></button></td>
-    </tr>
+
     </table>
     </form>
     </div>
+	<button id="btn" type="submit" name="btn-save" onclick="location.href='index.php';"><strong>SAVE</strong></button>
+	<button id="btn" type="button" onclick="location.href='index.php';">DISPLAY DATA</button>
 </div>
 
 </center>
