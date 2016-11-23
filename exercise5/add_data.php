@@ -1,90 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-
-	<style>
-
-	p.intro {
-		font-size: 20px;
-		color: #000000;
-		font-family: Goudy Old Style;
-		text-align: Center; 
-	}
-	
-	p.stylee {
-		font-weight: bold;
-	}
-	
-	body {
-		background-image: url("bg.jpg");
-		background-attachment: fixed;
-		align:center; 
-		font-family: Garamond;
-	}
-	
-	footer {
-		font-family: Times New Roman;
-		font-size: 17px;
-		font-color: white;
-	}
-
-	p.hob {
-		font-size: 40px;
-		color: BLACK;
-		font-family: Gigi;
-		text-align: center;
-		font-weight: bold;
-	}
-	
-	p.hob2 {
-		font-size: 25px;
-		font-family: Curlz MT;
-		text-align:center;
-		font-weight: bold;
-	}
-
-	p.con {
-		font-size: 40px;
-		color: BLACK;
-		font-family: Gigi;
-		text-align: center;
-		font-weight: bold;
-	}
-	
-	.error {
-		color: #FF0000;
-		font-size:20px;
-	}
-	img {
-		margin-right: 20px;
-		margin-top: 20px;
-	}
-	body {
-		background-image: url("bg.jpg");
-		background-attachment: fixed;
-		table border:0;
-		align:center; 
-		cellpadding:15;
-		font-family: Garamond;
-		font-size:20px;
-	}
-	
-	.all {
-		align: center;
-		position: relative;
-	}
-	
-	#btn {
-		font-family: Garamond;
-		font-size:17px;
-		background-color: white;
-	}
-</style>
-<body>
-
-<center>
-
 <?php
 include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
@@ -101,9 +14,28 @@ $gender = $_POST['gender'];
  
         $sql_query = "INSERT INTO users(name,nickname,email,home,gender,number,comment) VALUES('$name','$nickname','$email','$home','$gender','$number','$comment')";
  mysqli_query($link, $sql_query);
-        
         // sql query for inserting data into database
+		
+		// sql query execution function
+ if(mysql_query($sql_query))
+ {
+  ?>
+  <script type="text/javascript">
+  alert('Data Are Inserted Successfully ');
+  window.location.href='index.php';
+  </script>
+ 
+ <?php
  }
+  else 
+  {
+	  ?>
+  <script type="text/javascript">
+  alert('error occured while inserting your data');
+  </script>
+  <?php
+  }
+}
 ?>
 <center>
 
@@ -113,6 +45,8 @@ $gender = $_POST['gender'];
     </div>
 </div>
 <div id="body">
+
+<p id="form">enter the following details: </p>
 	
 <?php
 		// define variables and set to empty values
@@ -194,9 +128,8 @@ $gender = $_POST['gender'];
 				$comment = test_input($_POST["comment"]);
 		  	}	
 		}
-
 		
-	function test_input($data) {
+		function test_input($data) {
 		$data = trim($data);
 		$data = stripslashes($data);
 		$data = htmlspecialchars($data);
@@ -204,9 +137,8 @@ $gender = $_POST['gender'];
 			}
 	?>
 	
-	
 			<p><span class="error">* required field.
-			<br>*Don't forget to save and cick the Display data below</span></p>
+			<u><strong>*Don't forget to save and cick the Display data below </u></strong></span></p>
 			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 		
  <div id="content">
@@ -216,64 +148,44 @@ $gender = $_POST['gender'];
    
     </tr>
     <tr>
-		<td>
-			<label>Name:</label>
-		</td>
-		<td><input type="text" name="name" placeholder="Name" value="<?php echo $name;?>">
+    <td><input type="text" name="name" placeholder="Name" value="<?php echo $name;?>">
 			<span class="error">* <?php echo $nameErr;?></span>
-		</td>
+			<br><br> </td>
     </tr>
     <tr>
-		<td>
-			<label>Nickname:</label>
-		</td>
     <td><input type="text" name="nickname" placeholder="Nick name" value="<?php echo $nickname;?>">
 			<span class="error">* <?php echo $nicknameErr;?></span></td>
     </tr>
     <tr>
-		<td>
-			<label>Email:</label>
-		</td>
     <td><input type="text" name="email" placeholder="Email" value="<?php echo $email;?>">
 			<span class="error">* <?php echo $emailErr;?></span></td>
     </tr>
 	<tr>
-		<td>
-			<label>Home:</label>
-		</td>
-		<td><textarea name="home" placeholder ="home address" rows ="2" cols="30"><?php echo $home;?></textarea></span></td>
+    <td><textarea name="home" placeholder ="home address" rows ="2" cols="30"><?php echo $home;?></textarea>></span></td>
     </tr>
 
 	<tr>
-		<td>
-			<label>Gender:</label>
-		</td>
-		<td><input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+    <td><input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
 			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
 			<span class="error">* <?php echo $genderErr;?></span>
     </tr>
 
 	<tr>
-		<td>
-			<label>Mobile Number:</label>
-		</td>
-		<td><input type="text" name="number" placeholder="Cellphone Number" value="<?php echo $number;?>">
+    <td><input type="text" name="number" placeholder="Cellphone Number" value="<?php echo $number;?>">
 			<span class="error">* <?php echo $numberErr;?></span></td>
     </tr>
 
 	<tr>
-		<td>
-			<label>Comment:</label>
-		</td>
-		<td><textarea name="comment" placeholder="Comment" rows="5" cols="40"><?php echo $comment;?></textarea></span></td>
+    <td><textarea name="comment" placeholder="Comment" rows="5" cols="40"><?php echo $comment;?></textarea></span></td>
     </tr>
-
+	
+    <tr>
+    <td><button type="submit" name="btn-save" onclick="location.href='index.php';"><strong>SAVE</strong></button>
+	<button type="button" onclick="location.href='index.php';"><strong>DISPLAY DATA</strong></button></td>
+    </tr>
     </table>
     </form>
     </div>
-	<button id="btn" type="submit" name="btn-save" onclick="location.href='index.php';"><strong>SAVE</strong></button>
-	<button id="btn" type="button" onclick="location.href='index.php';">DISPLAY DATA</button>
 </div>
-
 </center>
 </body>
