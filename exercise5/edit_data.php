@@ -80,12 +80,12 @@ if(isset($_POST['btn-update']))
 	$number = $_POST['number'];
 	$comment = $_POST['comment']; 
  // variables for input data
- 
+
  // sql query for update data into database
- $sql_query = "UPDATE users SET name='$name', nickname='$nickname',email='$email',home='$home',gender='$gender',number='$number',comment='$comment' WHERE user_id=".$_GET['edit_id'];   
- // sql query for update data into database 
+$sql_query = "UPDATE users SET name='$name', nickname='$nickname',email='$email',home='$home',gender='$gender',number='$number',comment='$comment' WHERE user_id=".$_GET['edit_id'];   
+ // sql query for update data into database
  
-// sql query execution function
+ // sql query execution function
  if(mysqli_query($link, $sql_query))
  {
   ?>
@@ -100,7 +100,6 @@ if(isset($_POST['btn-update']))
   ?>
   <script type="text/javascript">
   alert('error occured while updating data');
-  window.location.href='index.php';
   </script>
   <?php
  }
@@ -111,6 +110,7 @@ if(isset($_POST['btn-cancel']))
  header("Location: index.php");
 }
 ?>
+
 </head>
 </center>
 <body>
@@ -159,8 +159,6 @@ if(isset($_POST['btn-cancel']))
 </div>
 
 <center>
-<div id="eto">
-<h1>Form</h1>
 
 <div id="header">
  <div id="content">
@@ -174,7 +172,7 @@ if(isset($_POST['btn-cancel']))
     <td><input type="text" name="name" placeholder="Name" value="<?php echo $fetched_row['name']; ?>" required/></td>
     </tr>
     <tr>
-    <td><input type="text" name="nickname" placeholder="Nickkame" value="<?php echo $fetched_row['nickname'];?>"required/></td>
+    <td><input type="text" name="nickname" placeholder="Nickname" value="<?php echo $fetched_row['nickname'];?>"required/></td>
     </tr>
     <tr>
     <td><input type="text" name="email" placeholder="Email" value="<?php echo $fetched_row['email'];?>" required></td>
