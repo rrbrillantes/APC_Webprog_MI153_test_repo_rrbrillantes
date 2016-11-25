@@ -4,7 +4,6 @@
 </head>
 
 	<style>
-
 	
 	footer {
 		font-family: Times New Roman;
@@ -37,26 +36,13 @@
 		font-size:20px;
 	}
 	
-	#eto{
-	width: 1100px;
-	height: 1000px;
-	background: rgba(0,0,0,0.1);
-	padding: 5px;
-	color: black;
-	margin: auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-family: Garamond;
+	#btn {
+		font-family: Garamond;
 		font-size:20px;
-	vertical-align:baseline;
 	}
-
-#hey {
-	vertical-align:baseline;
-	padding-left:80px;
-	font-family: Garamond;
-		font-size:20px;
-	text-align:center;
+	
+	#txt {
+		font-family: Arial;
 	}
 </style>
 
@@ -120,86 +106,112 @@ if(isset($_POST['btn-cancel']))
 <center>
 <div id ="head">
 	
-	<a href="form.php" target="_self" align >
-	<img src="FORM.png" width ="80" height ="40"align ="center"/>
-	</a> 
-	
-	<a href="contact.php" target="_self" align >
-	<img src="CONTACT.png" width ="80" height ="40"align ="center"/>
-	</a> 
-	
-	<a href="trivias.php" target="_self" align >
-	<img src="TRIVIAS.png" width ="80" height ="40"align ="center"/>
-	</a>
-	
-	<a href="favorites.php" target="_self" align >
-	<img src="FAVE.png" width ="80" height ="40"align ="center"/>
-	</a> 
-	
-	
-	<a href="hobbies.php" target="_self" align >
-	<img src="HOBBIES.png" width ="80" height ="40"align ="center"/></a> 
-
-	<a href="educ.php" target="_self" align >
-	<img src="EDUC.png" width ="80" height ="40"align ="center"/></a> 
-
-	<a href="family.php" target="_self" align >
-	<img src="FAM.png" width ="80" height ="40"align ="center"/>
-	</a>
-	
-	<a href="personalinfo.php" target="_self" align >
-	<img src="BASIC.png" width ="80" height ="40"align ="center"/>
-	</a>
-	
 	<a href="Exercise5_Brillantes.php" target="_self" align >
 	<img src="HOME.png" width ="80" height ="40"align ="center"/>
 	</a> 
-	
-	
+	<a href="personalinfo.php" target="_self" align >
+	<img src="BASIC.png" width ="80" height ="40"align ="center"/>
+	</a>
+	<a href="family.php" target="_self" align >
+	<img src="FAM.png" width ="80" height ="40"align ="center"/>
+	</a>
+	<a href="educ.php" target="_self" align >
+	<img src="EDUC.png" width ="80" height ="40"align ="center"/>
+	</a> 
+	<a href="hobbies.php" target="_self" align >
+	<img src="HOBBIES.png" width ="80" height ="40"align ="center"/>
+	</a> 
+	<a href="favorites.php" target="_self" align >
+	<img src="FAVE.png" width ="80" height ="40"align ="center"/>
+	</a> 
+	<a href="trivias.php" target="_self" align >
+	<img src="TRIVIAS.png" width ="80" height ="40"align ="center"/>
+	</a>
+	<a href="contact.php" target="_self" align >
+	<img src="CONTACT.png" width ="80" height ="40"align ="center"/>
+	</a>
+	<a href="form.php" target="_self" align >
+	<img src="FORM.png" width ="80" height ="40"align ="center"/>
+	</a>
 </div>
-
 <center>
-
-<div id="header">
- <div id="content">
-    <label>Please fill out the form.</label>
-    </div>
+<br>
+	<div id="header">
+	<div id="content">
+		<label>You can now edit the data you want</label>
+	</div>
+	
 	<div id="body">		
 	<div id="content">
-    <form method="post">
-    <table align="center">
+    
+	<form method="post">
+<br>
+<table align="center">
    <tr>
-    <td><input type="text" name="name" placeholder="Name" value="<?php echo $fetched_row['name']; ?>" required/></td>
+		<td>
+			<label>Name:</label>
+		</td>
+		<td>
+			<input type="text" name="name" placeholder="Name" value="<?php echo $fetched_row['name']; ?>" required/>
+		</td>
     </tr>
     <tr>
-    <td><input type="text" name="nickname" placeholder="Nickname" value="<?php echo $fetched_row['nickname'];?>"required/></td>
+		<td>
+			<label>Nickname:</label>
+		</td>
+		<td>
+			<input type="text" name="nickname" placeholder="Nickname" value="<?php echo $fetched_row['nickname'];?>"required/>
+		</td>
     </tr>
     <tr>
-    <td><input type="text" name="email" placeholder="Email" value="<?php echo $fetched_row['email'];?>" required></td>
+		<td>
+			<label>Email:</label>
+		</td>
+		<td>
+			<input type="text" name="email" placeholder="Email" value="<?php echo $fetched_row['email'];?>" required>
+		</td>
+    </tr>
+	
+	<tr>
+		<td>
+			<label>Home Address:</label>
+		</td>
+		<td>
+			<textarea id ="txt" name="home" placeholder ="home address" rows ="3" cols="30"><?php echo $fetched_row['home'];?></textarea>
+		</td>
     </tr>
 	<tr>
-    <td><textarea name="home" placeholder ="home address" rows ="3" cols="30"><?php echo $fetched_row['home'];?></textarea></td>
+		<td>
+			<label>Gender:</label>
+		</td>
+		<td>
+			<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="female">Female
+			<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="male">Male
+		</td>
     </tr>
 	<tr>
-    <td><input type="radio" name="gender"  <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="female">Female
-	<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="male">Male
-	</td>
+		<td>
+			<label>Mobile Number:</label>
+		</td>
+		<td>
+			<input type="text" name="number" placeholder="Cellphone Number" value="<?php echo $fetched_row['number'];?>"required>
+		</td>
     </tr>
 	<tr>
-    <td><input type="text" name="number" placeholder="Cellphone Number" value="<?php echo $fetched_row['number'];?>"required></td>
+		<td>
+			<label>Comment:</label>
+		</td>
+		<td>
+			<textarea id ="txt" name="comment" placeholder="Comment" rows="5" cols="40"><?php echo $fetched_row['comment'];?></textarea>
+		</td>
     </tr>
-	<tr>
-    <td><textarea name="comment" placeholder="Comment" rows="5" cols="40"><?php echo $fetched_row['comment'];?></textarea></td>
-    </tr>
-	<tr>
-    <td>
-    <button type="submit" name="btn-update"><strong>UPDATE</strong></button>
-    <button type="submit" name="btn-cancel"><strong>Cancel</strong></button>
-    </td>
-    </tr>
-	 </table>
-    </form>
-    </div>
+</table>
+
+    <button id="btn" type="submit" name="btn-update"><strong>UPDATE</strong></button>
+    <button id="btn" type="submit" name="btn-cancel"><strong>Cancel</strong></button>
+	
+</form>
+</div>
 </div>
 
 </center>
