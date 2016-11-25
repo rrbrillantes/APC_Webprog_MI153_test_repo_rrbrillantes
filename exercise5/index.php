@@ -147,6 +147,8 @@ function delete_id(id)
 <center>
 <br>
 <a class="adddata" href="form.php">add data here.</a>
+<br>
+<br>
 <div id="body">
  <div id="content">
     <table align="center">
