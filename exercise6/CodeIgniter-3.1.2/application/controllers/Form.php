@@ -5,7 +5,7 @@ class Form extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('form_model');
-        $this->load->helper('url_helper');
+        $this->load->helper('url');
     }
  
     public function index()
@@ -120,14 +120,14 @@ class Form extends CI_Controller {
     {
      
         $this->load->helper('url');
-        $this->load->view('form/Exercise6_Brillantes');
+        $this->load->view('Exercise6_Brillantes');
     }
 
 	public function personalinfo()
     {
      
         $this->load->helper('url');
-        $this->load->view('form/personalinfo');
+        $this->load->view('personalinfo');
     }
 
 
@@ -135,7 +135,7 @@ class Form extends CI_Controller {
     {
 		
         $this->load->helper('url');
-        $this->load->view('form/info');
+        $this->load->view('info');
     }
      public function family()
     {
@@ -143,7 +143,7 @@ class Form extends CI_Controller {
        
         //load view and pass the data
         $this->load->helper('url');
-        $this->load->view('form/family');
+        $this->load->view('family');
     }
 
      public function educ()
@@ -152,28 +152,28 @@ class Form extends CI_Controller {
        
         //load view and pass the data
         $this->load->helper('url');
-        $this->load->view('form/educ');
+        $this->load->view('educ');
     }
 	
 	public function hobbies()
     {
      
         $this->load->helper('url');
-        $this->load->view('form/hobbies');
+        $this->load->view('hobbies');
     }
 	
 	public function favorites()
     {
      
         $this->load->helper('url');
-        $this->load->view('form/favorites');
+        $this->load->view('favorites');
     }
 	
 	public function trivias()
     {
      
         $this->load->helper('url');
-        $this->load->view('form/trivias');
+        $this->load->view('trivias');
     }
 	
 	public function contact()
@@ -182,6 +182,6 @@ class Form extends CI_Controller {
        
         //load view and pass the data
         $this->load->helper('url');
-        $this->load->view('form/contact');
+        $this->load->view('contact');
     }
 }
