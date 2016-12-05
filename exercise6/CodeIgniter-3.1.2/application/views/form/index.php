@@ -14,7 +14,10 @@
 
 
 <body>
-<table border='1' cellpadding='4' >
+
+<center>
+                <p><a href="<?php echo site_url('form'); ?>">View List</a> | <a href="<?php echo site_url('form/create'); ?>">Add Details</a></p>
+<table border='1' cellpadding='4px' >
     <tr>
         <td><strong>Name</strong></td>
         <td><strong>Nickname</strong></td>
