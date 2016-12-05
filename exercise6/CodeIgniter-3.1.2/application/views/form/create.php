@@ -81,6 +81,8 @@
 </style>
 <body>
 <center>
+                <p><a href="<?php echo site_url('form'); ?>">View List</a> | <a href="<?php echo site_url('form/create'); ?>">Add Details</a></p>
+				
 
 <p class="con">You can also leave a comment here in my page...</p>
 <p id="form">Just enter the following details: </p>
@@ -88,7 +90,7 @@
 
 <?php echo validation_errors(); ?>
  <?php echo form_open('form/create'); ?>    
-    
+   
 <table BORDER="1" BORDERCOLOR="BLACK" cellpadding="5px">
 	<tr> 
 		<td>

@@ -63,7 +63,7 @@
 		margin-top: 20px;
 	}
 	body {
-		background-image: url("/css/uploads/bg.jpg");
+		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
 		table border:0;
 		align:center; 
@@ -76,6 +76,13 @@
 		align: center;
 		position: relative;
 	}
+	
+	#btn {
+		font-family: Garamond;
+		font-size:20px;
+	}
+	
+	
 </style>
 <body>
 <center>
@@ -84,22 +91,22 @@
 <?php echo validation_errors(); ?>
  
 <?php echo form_open('form/edit/'.$form_item['user_id']); ?>
-    <table>
+    <table BORDER="1" BORDERCOLOR="BLACK" cellpadding="10px">
         <tr>
             <td><label for="name">Name</label></td>
-            <td><input type="input" name="name" size="70" value="<?php echo $form_item['name'] ?>" /></td>
+            <td><input type="input" name="name" size="50" value="<?php echo $form_item['name'] ?>" /></td>
         </tr>
         <tr>
             <td><label for="nickname">Nickname</label></td>
-			<td><input type="input" name="nickname" size="70" value="<?php echo $form_item['nickname'] ?>" /></td>
+			<td><input type="input" name="nickname" size="50" value="<?php echo $form_item['nickname'] ?>" /></td>
 		</tr>
 		<tr>
             <td><label for="email">Email</label></td>
-			<td><input type="input" name="email" size="70" value="<?php echo $form_item['email'] ?>" /></td>
+			<td><input type="input" name="email" size="50" value="<?php echo $form_item['email'] ?>" /></td>
 		</tr>
 		<tr>
             <td><label for="home">Home</label></td>
-			<td><textarea name="home" rows="5" cols="30"><?php echo $form_item['home'] ?></textarea></td>
+			<td><textarea name="home" rows="3" cols="30"><?php echo $form_item['home'] ?></textarea></td>
 		</tr>
 		<tr>
             <td><label for="gender">Gender</label></td>
@@ -111,17 +118,16 @@
 		
 		<tr>
             <td><label for="number">Number</label></td>
-			<td><input type="input" name="number" size="70" value="<?php echo $form_item['number'] ?>" /></td>
+			<td><input type="input" name="number" size="50" value="<?php echo $form_item['number'] ?>" /></td>
 		</tr>
 		<tr>
             <td><label for="comment">Comment</label></td>
-            <td><textarea name="comment" rows="10" cols="40"><?php echo $form_item['comment'] ?></textarea></td>
+            <td><textarea name="comment" rows="3" cols="30"><?php echo $form_item['comment'] ?></textarea></td>
         </tr>
-        <tr>
-            <td></td>
-            <td><input type="submit" name="submit" value="Edit form item" /></td>
-        </tr>
-    </table>
+    </table>    
+
+	<input id="btn" type="submit" name="submit" value="Edit form item" /></td>
+
 </form>
 </body>
 </html>
