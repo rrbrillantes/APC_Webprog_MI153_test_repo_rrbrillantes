@@ -25,7 +25,8 @@
 </style>
 <body>
 <center>
-<img src="<?php echo base_url('css/uploads/dream.jpg')?>" style="float:left" height=300;>
+
+
 
 <center>
 </div>
