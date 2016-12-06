@@ -3,17 +3,15 @@ class Page extends CI_Controller {
  
 	public function index()
     {
-        $this->load->view('templates/header');
+        $this->load->view('templates/headerpage');
         $this->load->view('page/Exercise6_Brillantes');
-		$this->load->view('templates/footer');
 		
     }
 	public function Exercise6_Brillantes()
     {
 		
-		$this->load->view('templates/header');
+		$this->load->view('templates/headerpage');
         $this->load->view('page/Exercise6_Brillantes');
-		$this->load->view('templates/footer');
 		
     }
 
