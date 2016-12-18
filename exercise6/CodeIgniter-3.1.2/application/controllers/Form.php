@@ -98,6 +98,7 @@ class Form extends CI_Controller {
  
         if ($this->form_validation->run() === FALSE)
         {
+			
 			$this->load->view('templates/header', $data);
             $this->load->view('form/edit', $data);
 			$this->load->view('templates/footer');
@@ -105,6 +106,7 @@ class Form extends CI_Controller {
         }
         else
         {
+			
             $this->form_model->set_form($user_id);
             //$this->load->view('form/success');
             redirect( base_url() . 'index.php/form');
