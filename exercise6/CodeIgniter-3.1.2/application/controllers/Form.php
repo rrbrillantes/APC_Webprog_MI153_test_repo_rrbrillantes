@@ -110,16 +110,20 @@ class Form extends CI_Controller {
             $this->form_model->set_form($user_id);
             //$this->load->view('form/success');
             redirect( base_url() . 'index.php/form');
+			
         }
     }
     
     public function delete()
     {
+		
         $user_id = $this->uri->segment(3);
         
         if (empty($user_id))
         {
+			
             show_404();
+			
         }
                 
         $form_item = $this->form_model->get_form_by_id($user_id);
