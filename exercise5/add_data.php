@@ -3,6 +3,7 @@ include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
 {
  // variables for input data
+ 
  $name = $_POST['name'];
  $nickname = $_POST['nickname'];
  $email = $_POST['email'];
@@ -18,6 +19,7 @@ $gender = $_POST['gender'];
 		
 		// sql query execution function
  if(mysql_query($sql_query))
+	 
  {
   ?>
   <script type="text/javascript">
@@ -30,9 +32,11 @@ $gender = $_POST['gender'];
   else 
   {
 	  ?>
+	  
   <script type="text/javascript">
   alert('error occured while inserting your data');
   </script>
+  
   <?php
   }
 }
