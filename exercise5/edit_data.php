@@ -10,6 +10,7 @@
 		font-size: 17px;
 		font-color: white;
 	}
+	
 	p.con {
 		font-size: 40px;
 		color: BLACK;
@@ -22,10 +23,12 @@
 		color: #FF0000;
 		font-size:20px;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
 	}
+	
 	body {
 		background-image: url("bg.jpg");
 		background-attachment: fixed;
@@ -47,6 +50,7 @@
 </style>
 
 <center>
+
 <?php
 include_once 'dbconfig.php';
 if(isset($_GET['edit_id']))
