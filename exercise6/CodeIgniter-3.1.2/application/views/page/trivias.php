@@ -37,10 +37,12 @@
 		text-align:left;
 		width: 50%;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
 	}
+	
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
@@ -55,9 +57,12 @@
 		align: center;
 		position: relative;
 	}
+	
 </style>
 <body>
+
 <center>
+
 <p class="info"> Know more about me! </p>
 <table border="0" cellpadding="5" >
 
