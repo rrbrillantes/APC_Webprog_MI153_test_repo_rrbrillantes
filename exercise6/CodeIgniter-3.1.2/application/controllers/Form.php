@@ -173,6 +173,7 @@ class Form extends CI_Controller {
         //load view and pass the data
         $this->load->helper('url');
         $this->load->view('educ');
+		
     }
 	
 	public function hobbies()
@@ -180,6 +181,7 @@ class Form extends CI_Controller {
      
         $this->load->helper('url');
         $this->load->view('hobbies');
+		
     }
 	
 	public function favorites()
