@@ -129,7 +129,8 @@ class Form extends CI_Controller {
         $form_item = $this->form_model->get_form_by_id($user_id);
         
         $this->form_model->delete_form($user_id);        
-        redirect( base_url() . 'index.php/form');        
+        redirect( base_url() . 'index.php/form');     
+		
     }
 	
 	public function Exercise6_Brillantes()
@@ -137,6 +138,7 @@ class Form extends CI_Controller {
      
         $this->load->helper('url');
         $this->load->view('Exercise6_Brillantes');
+		
     }
 
 	public function personalinfo()
