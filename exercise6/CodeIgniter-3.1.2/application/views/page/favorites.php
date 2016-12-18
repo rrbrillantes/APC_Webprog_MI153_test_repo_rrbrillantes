@@ -71,8 +71,10 @@
 		font-family: Garamond;
 		font-size:20px;
 	}
+	
 </style>
 <body>
+
 <center>
 
 <p class="hob"> Let's talk about my favorites! </p>
@@ -95,6 +97,7 @@
 		</td>
 	</tr>
 </table>
+
 <table border="0" cellpadding="5" >
 	<tr>
 		<td>
@@ -108,6 +111,7 @@
 </table>
 
 <p class="double">Groups</p>
+
 <table border="0" cellpadding="5" >
 	<tr>
 		<td>
@@ -142,6 +146,7 @@
 
 
 <p class="double">Korean Dramas</p>
+
 <table border="0" cellpadding="5" >
 	<tr>
 		<td>
@@ -191,6 +196,7 @@
 <center><figcaption> - LET'S FIGHT GHOST!</figcaption></center>
 
 <p class="double">BANDS (Foreign & Local)</p>
+
 <table border="0" cellpadding="5" >
 	<tr>
 		<td>
