@@ -16,13 +16,10 @@
 		font-weight: bold;
 	}
 	
-
-	
 	table {
 		margin-top:30px;
 	}
 
-	
 	footer {
 		font-family: Times New Roman;
 		font-size: 17px;
@@ -36,10 +33,12 @@
 		text-align: center;
 		font-weight: bold;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
 	}
+	
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
@@ -59,7 +58,9 @@
 <center>
 
 <p class="edu">My Education</p>
+
 <center>
+
 <table align="middle" bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="50%" >
 	
 	
