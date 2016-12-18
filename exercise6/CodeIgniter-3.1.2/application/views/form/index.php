@@ -10,6 +10,7 @@
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 	}
+	
 </style>
 
 
