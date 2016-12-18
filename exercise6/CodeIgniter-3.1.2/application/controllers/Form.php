@@ -3,6 +3,7 @@ class Form extends CI_Controller {
  
     public function __construct()
     {
+		
         parent::__construct();
         $this->load->model('form_model');
         $this->load->helper('url');
@@ -10,6 +11,7 @@ class Form extends CI_Controller {
  
     public function index()
     {
+		
         $data['form'] = $this->form_model->get_form();
 
 		$this->load->view('templates/header', $data);
@@ -20,6 +22,7 @@ class Form extends CI_Controller {
  
     public function view($nickname = NULL)
     {
+		
         $data['form_item'] = $this->form_model->get_form($nickname);
         
         if (empty($data['form_item']))
@@ -37,6 +40,7 @@ class Form extends CI_Controller {
     
     public function create()
     {
+		
         $this->load->helper('form');
 		$this->load->library('form_validation');
  
@@ -51,6 +55,7 @@ class Form extends CI_Controller {
  
         if ($this->form_validation->run() === FALSE)
 		{
+			
 			$this->load->view('templates/header', $data);
 			$this->load->view('form/create');
 			$this->load->view('templates/footer');
@@ -58,15 +63,18 @@ class Form extends CI_Controller {
         }
         else
         {
+			
             $this->form_model->set_form();
 			$this->load->view('templates/header', $data);
 			$this->load->view('form/success');
 			$this->load->view('templates/footer');
+			
         }
     }
     
     public function edit()
     {
+		
         $user_id = $this->uri->segment(3);
         
         if (empty($user_id))
