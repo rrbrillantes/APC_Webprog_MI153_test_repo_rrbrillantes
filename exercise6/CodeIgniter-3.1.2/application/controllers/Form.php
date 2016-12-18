@@ -187,6 +187,7 @@ class Form extends CI_Controller {
 	public function favorites()
     {
      
+	 //load view and pass the data
         $this->load->helper('url');
         $this->load->view('favorites');
     }
