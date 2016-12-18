@@ -49,10 +49,12 @@
 		color: #FF0000;
 		font-size:20px;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
 	}
+	
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
@@ -84,6 +86,7 @@
 		cellpadding: 5px;
 		table-layout: fixed;
 	}
+	
 	tr, td {
 		width: 220px;
 	}
@@ -91,9 +94,11 @@
 </style>
 <body>
 <center>
+
 <br>
 <br>
 <br>
+
 <table cellpadding="5px">
 	<tr>
 		<td>
