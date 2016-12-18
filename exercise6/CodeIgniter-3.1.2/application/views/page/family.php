@@ -55,10 +55,12 @@
 		text-align: center;
 		font-weight: bold;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
 	}
+	
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
@@ -75,8 +77,11 @@
 	}
 </style>
 <body>
+
 <center>
+
 <p class="fam"> Meet My Family! </p>
+
 <center>
 
 <table class="t1" align="left" bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="30%" >
