@@ -3,6 +3,7 @@ class Page extends CI_Controller {
  
 	public function index()
     {
+		
         $this->load->view('templates/headerpage');
         $this->load->view('page/Exercise6_Brillantes');
 		
@@ -26,7 +27,6 @@ class Page extends CI_Controller {
 
      public function info()
     {
-		
 		
 		$this->load->view('templates/header');
         $this->load->view('page/info');
@@ -80,5 +80,6 @@ class Page extends CI_Controller {
 		$this->load->view('templates/header');
         $this->load->view('page/contact');
 		$this->load->view('templates/footer');
+		
     }
 }
