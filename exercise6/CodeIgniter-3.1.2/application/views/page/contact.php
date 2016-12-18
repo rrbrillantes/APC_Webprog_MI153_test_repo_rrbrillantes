@@ -2,8 +2,9 @@
 <html>
 <head>
 </head>
-<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/style.css"/>
-	<style>
+
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/style.css"/>
+<style>
 
 	p.intro {
 		font-size: 20px;
@@ -15,6 +16,7 @@
 	p.stylee {
 		font-weight: bold;
 	}
+	
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
@@ -58,6 +60,7 @@
 		color: #FF0000;
 		font-size:20px;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
@@ -71,8 +74,13 @@
 <body>
 
 <center>
+
 <p class="con">You can reach me through the following sites</p>
-<?php echo validation_errors(); ?>
+
+<?php 
+echo validation_errors(); 
+?>
+
 <table class="t1" align="middle" bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="30%" style="float:center">
 	<tr>
 		<td> 
