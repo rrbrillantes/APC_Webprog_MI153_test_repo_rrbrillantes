@@ -49,10 +49,12 @@
 		color: #FF0000;
 		font-size:20px;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
 	}
+	
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
@@ -80,6 +82,7 @@
 	
 </style>
 <body>
+
 <center>
                 <p><a href="<?php echo site_url('form'); ?>">View List</a> | <a href="<?php echo site_url('form/create'); ?>">Add Details</a></p>
 				
