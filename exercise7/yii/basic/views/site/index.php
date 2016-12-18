@@ -46,7 +46,6 @@
     }
     
     body {
-       
         background-attachment: fixed;
         table border:0;
         align:center; 
@@ -66,22 +65,6 @@ $this->title = 'My Yii Application';
 <body>
 <center>
 <p class="info"> Basic Information </p>
-<table border="0" cellpadding="5" >
-
-    <tr>
-        <td>
-        <img src="<?php echo base_url('css/uploads/me.jpg')?>" style="float:left" height=300;>
-        </td>
-        
-        <td>
-        <img src="<?php echo base_url('css/uploads/me3.jpg')?>" style="float:left" height=300;>
-        </td>
-        
-        <td>
-        <img src="<?php echo base_url('css/uploads/me2.jpg')?>" style="float:left" height=300;>
-        </td>
-    </tr>
-</table>
 <br>
 <br>
 
