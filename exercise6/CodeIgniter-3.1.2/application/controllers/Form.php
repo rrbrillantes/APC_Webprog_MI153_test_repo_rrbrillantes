@@ -153,6 +153,7 @@ class Form extends CI_Controller {
      public function info()
     {
 		
+		//load view and pass the data
         $this->load->helper('url');
         $this->load->view('info');
 		
@@ -160,7 +161,6 @@ class Form extends CI_Controller {
      public function family()
     {
      
-       
         //load view and pass the data
         $this->load->helper('url');
         $this->load->view('family');
