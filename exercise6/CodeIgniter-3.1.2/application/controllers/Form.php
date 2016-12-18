@@ -146,6 +146,7 @@ class Form extends CI_Controller {
      
         $this->load->helper('url');
         $this->load->view('personalinfo');
+		
     }
 
 
@@ -154,6 +155,7 @@ class Form extends CI_Controller {
 		
         $this->load->helper('url');
         $this->load->view('info');
+		
     }
      public function family()
     {
