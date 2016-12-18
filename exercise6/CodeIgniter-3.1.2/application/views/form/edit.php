@@ -52,6 +52,7 @@
 		font-family: Gigi;
 		text-align: center;
 		font-weight: bold;
+		
 	}
 	
 	.error {
@@ -85,7 +86,9 @@
 	
 </style>
 <body>
+
 <center>
+
 <p class="con">Feel free to edit your details</p>
 
 <?php echo validation_errors(); ?>
