@@ -16,8 +16,6 @@
 		font-weight: bold;
 	}
 	
-	
-	
 	footer {
 		font-family: Times New Roman;
 		font-size: 17px;
@@ -35,6 +33,7 @@
 	table {
 		position: center;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
@@ -57,7 +56,9 @@
 	
 </style>
 <body>
+
 <center>
+
 <p class="info"> Basic Information </p>
 <table border="0" cellpadding="5" >
 
