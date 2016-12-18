@@ -79,7 +79,9 @@ class Form extends CI_Controller {
         
         if (empty($user_id))
         {
+			
             show_404();
+			
         }
         
         $this->load->helper('form');
