@@ -2,12 +2,16 @@
 <html>
 <head>
 </head>
-<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/style.css"/>
+
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/style.css"/>
+
 <style>
+
 	img {
 		margin-left: 40px;
 		margin-top: 40px;
 	}
+	
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
@@ -24,6 +28,7 @@
 	}
 </style>
 <body>
+
 <center>
 
 
