@@ -164,11 +164,11 @@ class Form extends CI_Controller {
         //load view and pass the data
         $this->load->helper('url');
         $this->load->view('family');
+		
     }
 
      public function educ()
     {
-     
        
         //load view and pass the data
         $this->load->helper('url');
