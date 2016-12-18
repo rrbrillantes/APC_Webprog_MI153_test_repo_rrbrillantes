@@ -16,7 +16,6 @@
 		font-weight: bold;
 	}
 
-	
 		footer {
 		font-family: Times New Roman;
 		font-size: 17px;
@@ -37,10 +36,12 @@
 		text-align:center;
 		font-weight: bold;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
 	}
+	
 	body {
 		background-image: url("<?php echo base_url('css/uploads/bg.jpg')?>");
 		background-attachment: fixed;
@@ -57,6 +58,7 @@
 	}
 </style>
 <body>
+
 <center>
 
 <p class="hob"> What I like to do when i'm bored... </p>
