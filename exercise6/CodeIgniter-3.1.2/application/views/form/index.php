@@ -18,6 +18,7 @@
 
 <center>
                 <p><a href="<?php echo site_url('form'); ?>">View List</a> | <a href="<?php echo site_url('form/create'); ?>">Add Details</a></p>
+				
 <table border='1' cellpadding='4px' >
     <tr>
         <td><strong>Name</strong></td>
@@ -30,6 +31,7 @@
 		<td><strong>Action</strong></td>
 		
     </tr>
+	
 <?php foreach ($form as $form_item): ?>
         <tr>
 			<td><?php echo $form_item['name']; ?></td>
@@ -45,5 +47,6 @@
                 <a href="<?php echo site_url('form/delete/'.$form_item['user_id']); ?>" onClick="return confirm('Are you sure you want to delete?')">Delete</a>
             </td>
         </tr>
+		
 <?php endforeach; ?>
 </table>
