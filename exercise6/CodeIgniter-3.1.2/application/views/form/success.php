@@ -17,13 +17,15 @@
 		font-family: Garamond;
 		font-size:20px;
 	}
+	
 </style>
 <body>
 
 <center>
                 <p><a href="<?php echo site_url('form'); ?>">View List</a> | <a href="<?php echo site_url('form/create'); ?>">Add Details</a></p>
 				
-<p class="hehe" >Details added successfully!</p>
+<p class="hehe">Details added successfully!</p>
+
 </body>
 
 </html>
