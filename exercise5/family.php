@@ -55,10 +55,12 @@
 		text-align: center;
 		font-weight: bold;
 	}
+	
 	img {
 		margin-right: 20px;
 		margin-top: 20px;
 	}
+	
 	body {
 		background-image: url("bg.jpg");
 		background-attachment: fixed;
@@ -75,9 +77,13 @@
 	}
 </style>
 <body>
+
 <center>
+
 <img class="all" src="ALL.png" width ="500" height ="130"/>
+
 <br>
+
 <center>
 <div id ="head">
 
