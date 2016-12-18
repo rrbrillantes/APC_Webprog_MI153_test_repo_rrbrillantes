@@ -2,6 +2,7 @@
 include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
 {
+	
  // variables for input data
  $name = $_POST['name'];
  $nickname = $_POST['nickname'];
@@ -43,7 +44,7 @@ if(isset($_POST['btn-save']))
 $nameErr = $nicknameErr = $emailErr = $genderErr = $numberErr = $homeErr = "";
 $name = $nickname = $email = $gender = $comment = $number = $home = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
     $nameErr = "Name is required";
   } else {
