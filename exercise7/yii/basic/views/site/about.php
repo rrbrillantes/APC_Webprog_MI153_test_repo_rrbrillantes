@@ -14,6 +14,19 @@ $this->title = 'My Yii Application';
 <body>
 <center>
 <p class="info"> Basic Information </p>
+<table border="0" cellpadding="5" >
+
+    <tr>
+        
+        <td>
+        <img border="0" src=<?php echo Yii::$app->request->baseUrl . "/Images/me3.jpg";?> style="float:left" height=300>
+        </td>
+        
+        <td>
+        <img border="0" src=<?php echo Yii::$app->request->baseUrl . "/Images/me2.jpg";?> style="float:left" height=300>
+        </td>
+    </tr>
+</table>
 <br>
 <br>
 
