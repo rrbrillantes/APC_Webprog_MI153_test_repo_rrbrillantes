@@ -39,7 +39,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <p class="con">You can reach me through the following sites</p>
 
-
+<br>
+<br>
 <table class="t1" align="middle" bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="30%" style="float:center">
     <tr>
         <td> 
