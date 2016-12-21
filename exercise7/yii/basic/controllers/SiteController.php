@@ -127,4 +127,9 @@ class SiteController extends Controller
     {
         return $this->render('family');
     }
+
+     public function actionEduc()
+    {
+        return $this->render('educ');
+    }
 }

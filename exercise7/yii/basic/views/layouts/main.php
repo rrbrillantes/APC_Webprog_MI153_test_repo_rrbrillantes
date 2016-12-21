@@ -39,6 +39,7 @@ AppAsset::register($this);
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Basic Information', 'url' => ['/site/about']],
             ['label' => 'Family', 'url' => ['/site/family']],
+            ['label' => 'Education', 'url' => ['/site/educ']],
             ['label' => 'Trivias', 'url' => ['/trivia']],
             ['label' => 'Users', 'url' => ['/form']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
