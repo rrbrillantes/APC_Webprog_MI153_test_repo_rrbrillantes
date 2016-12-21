@@ -12,9 +12,24 @@ use yii\data\ActiveDataProvider;
 $this->title = 'Trivias';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="trivia-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+<style type="text/css">
+
+    .trivia-index {
+         width: 70%;
+    }
+    
+    p.con {
+        font-size: 40px;
+        color: BLACK;
+        font-family: Gigi;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+<center>
+<div class="trivia-index">
+    <p class="con"><?= Html::encode($this->title) ?></p>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
