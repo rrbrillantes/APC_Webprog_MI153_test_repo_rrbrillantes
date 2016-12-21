@@ -8,7 +8,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'All About Me';
 ?>
 
 <body>
@@ -27,6 +27,7 @@ $this->title = 'My Yii Application';
         </td>
     </tr>
 </table>
+<br>
 <br>
 <br>
 
