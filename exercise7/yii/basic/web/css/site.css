@@ -1,6 +1,10 @@
 html,
 body {
     height: 100%;
+    background-image: url(../Images/bg.jpg);
+    background-repeat: repeat;
+    background-attachment: stretch;
+    background-position: center;
 }
 
 .wrap {
@@ -24,6 +28,7 @@ body {
 .jumbotron {
     text-align: center;
     background-color: transparent;
+    color: black;
 }
 
 .jumbotron .btn {
