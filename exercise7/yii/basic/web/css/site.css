@@ -6,6 +6,8 @@ body {
     background-attachment: fixed;
     background-position: center;
     cellpadding:15;
+    font-family: Garamond;
+    font-size:20px;
     table border:0;
 }
 
@@ -18,7 +20,7 @@ body {
 }
 
 .wrap > .container {
-    padding: 1% 10% 20%;
+    padding: 70px 10px 20px;
 }
 
 .footer {
@@ -30,11 +32,11 @@ body {
 }
 
 .jumbotron {
+    font-size: 30px;
     text-align: center;
     background-color: transparent;
     color: black;
 }
-
 
 .jumbotron .btn {
     font-size: 21px;
@@ -133,11 +135,18 @@ a.desc:after {
     
     p.stylee {
         font-weight: bold;
+
     }
     
     p.ho {
         font-size: 15px;
         font-family: Goudy Old Style;
+    }
+    
+    footer {
+        font-family: Times New Roman;
+        font-size: 17px;
+        font-color: white;
     }
     
     p.info {
@@ -151,7 +160,6 @@ a.desc:after {
     table {
         position: center;
     }
-
     img {
         margin-right: 20px;
         margin-top: 20px;

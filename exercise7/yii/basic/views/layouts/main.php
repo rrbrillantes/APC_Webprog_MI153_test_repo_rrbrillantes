@@ -37,7 +37,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Basic Information', 'url' => ['/page/about']],
+            ['label' => 'Basic Information', 'url' => ['/site/about']],
             ['label' => 'Family', 'url' => ['/site/family']],
             ['label' => 'Trivias', 'url' => ['/trivia']],
             ['label' => 'Users', 'url' => ['/form']],
