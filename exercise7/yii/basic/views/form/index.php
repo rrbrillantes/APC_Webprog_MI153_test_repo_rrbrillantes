@@ -7,17 +7,30 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\FormSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Forms';
+$this->title = 'Comment Section';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<style type="text/css">
+    
+    p.con {
+        font-size: 40px;
+        color: BLACK;
+        font-family: Gigi;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+<center>
 <div class="form-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <p class="con"><?= Html::encode($this->title) ?></p>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Form', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Insert users', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+    <br>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
