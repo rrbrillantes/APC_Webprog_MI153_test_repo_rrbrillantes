@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Exercise 7 Application';
+$this->title = 'All About Me';
 ?>
 <body class="background">
 
