@@ -132,4 +132,9 @@ class SiteController extends Controller
     {
         return $this->render('educ');
     }
+
+    public function actionHobbies()
+    {
+        return $this->render('hobbies');
+    }
 }
