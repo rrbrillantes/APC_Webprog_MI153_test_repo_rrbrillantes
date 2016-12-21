@@ -8,6 +8,7 @@ use app\models\TriviaSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\data\ActiveDataProvider;
 
 /**
  * TriviaController implements the CRUD actions for Trivia model.
@@ -42,7 +43,10 @@ class TriviaController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
-
+$dataProvider = new ActiveDataProvider([
+    'query' => $query,
+    'pagination' => false,
+]); 
         randomNumber();
     }
 
@@ -122,5 +126,7 @@ class TriviaController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+
+
     }
 }
