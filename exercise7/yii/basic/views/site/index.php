@@ -4,12 +4,16 @@
 
 $this->title = 'All About Me';
 ?>
-<body class="background">
 
+<body class="background">
 <div class="site-index">
 
+
     <div class="jumbotron">
-        <h2>This is my Exercise 7 for our WEBPROG class</h2>
+        
+        <h1>Hello!</h1>
+        <br>
+        <p class="headd">This is my Exercise 7 for our WEBPROG class</p>
         <br>
         <p class="intro">If you also want to learn how to use Yii</p>
          <p class="intro">Click the button below</p>
