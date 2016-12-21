@@ -9,9 +9,10 @@ $this->title = 'All About Me';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>This is my Exercise 7</h1>
-
-        <p class="lead">Click the button below to start your yii application</p>
+        <h2>This is my Exercise 7 for our WEBPROG class</h2>
+        <br>
+        <p class="intro">If you also want to learn how to use Yii</p>
+         <p class="intro">Click the button below</p>
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
@@ -20,14 +21,10 @@ $this->title = 'All About Me';
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Basic Information</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p class="ho">Here are the basic information about the creator of this website.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>
