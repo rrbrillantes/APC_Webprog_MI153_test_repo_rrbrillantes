@@ -16,6 +16,7 @@ body {
     height: auto;
     margin: 0 auto -60px;
     padding: 1% 5% 10%;
+    font-size: 15px;
 }
 
 .wrap > .container {
