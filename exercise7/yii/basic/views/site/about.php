@@ -8,7 +8,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'All About Me';
+$this->title = 'Basic Information';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
