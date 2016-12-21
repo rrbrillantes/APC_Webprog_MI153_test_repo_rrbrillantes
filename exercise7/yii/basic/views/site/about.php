@@ -3,58 +3,7 @@
 <head>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <style>
 
-    p.intro {
-        font-size: 20px;
-        color: #000000;
-        font-family: Goudy Old Style;
-        text-align: Center; 
-    }
-    
-    p.stylee {
-        font-weight: bold;
-    }
-    
-    
-    
-    footer {
-        font-family: Times New Roman;
-        font-size: 17px;
-        font-color: white;
-    }
-    
-    p.info {
-        font-size: 40px;
-        color: BLACK;
-        font-family: Gigi;
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    table {
-        position: center;
-    }
-    img {
-        margin-right: 20px;
-        margin-top: 20px;
-    }
-
-    .all {
-        align: center;
-        position: relative;
-    }
-    
-    body {
-        background-attachment: fixed;
-        table border:0;
-        align:center; 
-        cellpadding:15;
-        font-family: Garamond;
-        font-size:20px;
-    }
-    
-</style>
 <?php
 
 /* @var $this yii\web\View */

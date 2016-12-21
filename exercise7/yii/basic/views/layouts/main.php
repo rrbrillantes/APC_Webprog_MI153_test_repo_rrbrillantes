@@ -36,7 +36,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/page/info']],
+            ['label' => 'Home', 'url' => ['/site/about']],
             ['label' => 'About', 'url' => ['/page/index']],
             ['label' => 'Users', 'url' => ['/form']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
@@ -65,11 +65,11 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 </div>
-
+<br>
+<br>
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; Rachel Anne R. Brillantes, WEBPROG - MI153 <?= date('Y') ?></p>
-
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
