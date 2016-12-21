@@ -1,127 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <style>
-
-    p.intro {
-        font-size: 20px;
-        color: #000000;
-        font-family: Goudy Old Style;
-        text-align: Center; 
-    }
-    
-    p.stylee {
-        font-weight: bold;
-    }
-    
-    
-    
-    footer {
-        font-family: Times New Roman;
-        font-size: 17px;
-        font-color: white;
-    }
-    
-    p.info {
-        font-size: 40px;
-        color: BLACK;
-        font-family: Gigi;
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    table {
-        position: center;
-    }
-    img {
-        margin-right: 20px;
-        margin-top: 20px;
-    }
-
-    .all {
-        align: center;
-        position: relative;
-    }
-    
-    body {
-        background-attachment: fixed;
-        table border:0;
-        align:center; 
-        cellpadding:15;
-        font-family: Garamond;
-        font-size:20px;
-    }
-    
-</style>
 <?php
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Exercise 7 Application';
 ?>
+<body class="background">
 
-<body>
-<center>
-<p class="info"> Basic Information </p>
-<br>
-<br>
+<div class="site-index">
 
-<center>
-<table bgcolor="#fde9ec" BORDER="1" BORDERCOLOR="BLACK" cellpadding="4" width="30%">
+    <div class="jumbotron">
+        <h1>This is my Exercise 7</h1>
 
-    <tr>
-        <td>
-        <p class="intro stylee">Fullname: </p>
-        </td>
-        
-        <td>
-        <p class="intro">Rachel Anne Rondena Brillantes</p>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-        <p class="intro stylee">Nickname:</p>
-        </td>
-        
-        <td>
-        <p class="intro">Rachel/Chel</p>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-        <p class="intro stylee">Birthdate:</p>
-        </td>
-        
-        <td>
-        <p class="intro">March 04, 1997</p>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-        <p class="intro stylee">Zodiac Sign:</p>
-        </td>
-        
-        <td>
-        <p class="intro">Pisces</p>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-        <p class="intro stylee">Birthplace:</p>
-        </td>
-        
-        <td>
-        <p class="intro">Taytay, Rizal</p>
-        </td>
-    </tr>
-    
-</table>
+        <p class="lead">Click the button below to start your yii application</p>
 
-</body>
-</html>
+        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+    </div>
+
+    <div class="body-content">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Heading</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.</p>
+
+                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <h2>Heading</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.</p>
+
+                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <h2>Heading</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.</p>
+
+                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+            </div>
+        </div>
+
+    </div>
+</div>
