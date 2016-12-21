@@ -9,6 +9,7 @@
 /* @var $this yii\web\View */
 
 $this->title = 'All About Me';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <body>
