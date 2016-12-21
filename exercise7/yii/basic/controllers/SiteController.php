@@ -137,4 +137,9 @@ class SiteController extends Controller
     {
         return $this->render('hobbies');
     }
+
+    public function actionFavorites()
+    {
+        return $this->render('favorites');
+    }
 }

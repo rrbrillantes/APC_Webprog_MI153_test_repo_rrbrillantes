@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'All About Me';
+$this->title = 'Family';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 

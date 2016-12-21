@@ -170,3 +170,8 @@ a.desc:after {
         align: center;
         position: relative;
     }
+
+    .row {
+        display: table;
+        margin: 0 auto;
+    }
