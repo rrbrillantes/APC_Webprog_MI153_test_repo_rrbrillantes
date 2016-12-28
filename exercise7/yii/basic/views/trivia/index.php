@@ -13,6 +13,20 @@ $this->title = 'Trivias';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function()
+  {
+      $("#show").click(function(){
+         $('answer').toggle();
+      });
+  });
+  function reload() {
+      location.reload();
+  }
+</script>
+
 <style type="text/css">
 
     .trivia-index {
@@ -26,10 +40,13 @@ $this->params['breadcrumbs'][] = $this->title;
         text-align: center;
         font-weight: bold;
     }
+
 </style>
 <center>
+<br>
 <div class="trivia-index">
     <p class="con"><?= Html::encode($this->title) ?></p>
+
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
@@ -43,17 +60,19 @@ $this->params['breadcrumbs'][] = $this->title;
             }
             ?>
     </p>
-    <?php Pjax::begin(); ?>   
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'questions',
-
-            ['class' => 'yii\grid\ActionColumn','template'=>'{view}'],
-        ],
-    ]); ?>
-    <?php Pjax::end(); ?>
 </div>
+
+
+  <?php foreach ($trivia as $trivia): ?>
+
+      <p><strong><?= Html::encode("{$trivia->questions}") ?>:</strong>
+      <br>
+          <answer style="display:none"> -- &nbsp;<?=$trivia->answer ?></answer>
+
+      </p>
+  <?php endforeach; ?>
+
+
+  <button id="show" class="btn btn-success">Show all answers</button> <br><br>
+
+
