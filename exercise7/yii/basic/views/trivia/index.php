@@ -71,7 +71,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
   <?php foreach ($trivia as $trivia): ?>
 
-      <p><strong><?= Html::encode("{$trivia->questions}") ?>:</strong>
+      <p class='triv'><strong><?= Html::encode("{$trivia->questions}") ?>:</strong>
       <br>
           <answer style="display:none"> -- &nbsp;<?=$trivia->answer ?></answer>
 
