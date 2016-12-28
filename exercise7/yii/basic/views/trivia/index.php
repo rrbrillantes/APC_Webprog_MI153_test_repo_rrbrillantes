@@ -75,6 +75,8 @@ $this->params['breadcrumbs'][] = $this->title;
 <br>
 <br>
 
-  <button id="show" class="btn btn-success">Show all answers</button> <br><br>
+  <button id="show" class="btn btn-success">Show all answers</button>
+  <br>
+  <br>
 
 
