@@ -79,4 +79,5 @@ $this->params['breadcrumbs'][] = $this->title;
   <br>
   <br>
 
+  <button class="btn btn-success" onclick="reload()">RANDOMIZE !</button>
 
