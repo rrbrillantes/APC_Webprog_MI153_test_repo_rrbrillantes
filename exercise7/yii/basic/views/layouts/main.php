@@ -74,8 +74,9 @@ AppAsset::register($this);
 <br>
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Rachel Anne R. Brillantes, WEBPROG - MI153 <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; Rachel Anne R. Brillantes - WEBPROG - MI153 <?= date('Y') ?></p>
+
+        <p style="color:white" class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
 
