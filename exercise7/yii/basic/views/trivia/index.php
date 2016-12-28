@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
     }
 
     p.smallinfo {
-        font-size: 30px;
+        font-size: 25px;
         color: BLACK;
         font-family: Goudy Old Style;
         font-weight: bold;
