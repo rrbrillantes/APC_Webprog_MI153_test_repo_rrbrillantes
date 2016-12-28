@@ -72,6 +72,8 @@ $this->params['breadcrumbs'][] = $this->title;
       </p>
   <?php endforeach; ?>
 
+<br>
+<br>
 
   <button id="show" class="btn btn-success">Show all answers</button> <br><br>
 
