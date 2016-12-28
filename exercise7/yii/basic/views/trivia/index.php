@@ -46,12 +46,19 @@ $this->params['breadcrumbs'][] = $this->title;
         color: #000000;
         font-family: Goudy Old Style;
     }
+
+    p.smallinfo {
+        font-size: 30px;
+        color: BLACK;
+        font-family: Goudy Old Style;
+        font-weight: bold;
+    }
 </style>
 <center>
 <br>
 <div class="trivia-index">
     <p class="con"><?= Html::encode($this->title) ?></p>
-
+<p class="smallinfo">These are five random trivias about me!</p>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
@@ -66,8 +73,12 @@ $this->params['breadcrumbs'][] = $this->title;
             ?>
     </p>
 </div>
+
 </center>
-<p class="smallinfo">These are five random trivias about me!</p>
+
+<br>
+<br>
+
   <?php foreach ($trivia as $trivia): ?>
 
       <p class='triv'><strong><?= Html::encode("{$trivia->questions}") ?>:</strong>
