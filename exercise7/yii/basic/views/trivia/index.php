@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 </div>
 </center>
-
+<p class="smallinfo">These are five random trivias about me!</p>
   <?php foreach ($trivia as $trivia): ?>
 
       <p class='triv'><strong><?= Html::encode("{$trivia->questions}") ?>:</strong>
