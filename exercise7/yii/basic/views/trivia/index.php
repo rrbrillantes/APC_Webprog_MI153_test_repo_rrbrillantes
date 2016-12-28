@@ -40,6 +40,12 @@ $this->params['breadcrumbs'][] = $this->title;
         text-align: center;
         font-weight: bold;
     }
+    
+    p.triv {
+        font-size: 20px;
+        color: #000000;
+        font-family: Goudy Old Style;
+    }
 
 </style>
 <center>
