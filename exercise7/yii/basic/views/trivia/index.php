@@ -46,7 +46,6 @@ $this->params['breadcrumbs'][] = $this->title;
         color: #000000;
         font-family: Goudy Old Style;
     }
-
 </style>
 <center>
 <br>
@@ -74,16 +73,14 @@ $this->params['breadcrumbs'][] = $this->title;
       <p class='triv'><strong><?= Html::encode("{$trivia->questions}") ?>:</strong>
       <br>
           <answer style="display:none"> -- &nbsp;<?=$trivia->answer ?></answer>
-
+        <br>
+        <br>
       </p>
   <?php endforeach; ?>
 
 <br>
 <br>
 
-  <button id="show" class="btn btn-success">Show all answers</button>
-  <br>
-  <br>
-
+  <button id="show" class="btn btn-success">Show all answers</button> <br><br>
   <button class="btn btn-success" onclick="reload()">RANDOMIZE !</button>
 
