@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ?>
     </p>
 </div>
-
+</center>
 
   <?php foreach ($trivia as $trivia): ?>
 
