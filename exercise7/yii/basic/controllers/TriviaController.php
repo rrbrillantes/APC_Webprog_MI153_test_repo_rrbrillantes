@@ -5,30 +5,14 @@ namespace app\controllers;
 use Yii;
 use app\models\Trivia;
 use app\models\TriviaSearch;
+use yii\db\Expression;
 use yii\web\Controller;
-use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 use yii\data\ActiveDataProvider;
-
 /**
  * TriviaController implements the CRUD actions for Trivia model.
  */
 class TriviaController extends Controller
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all Trivia models.
@@ -36,18 +20,16 @@ class TriviaController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new TriviaSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+      $query = Trivia::find()
+        ->orderBy(new Expression('rand()'))
+        ->limit(5)
+        ->all();
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
-$dataProvider = new ActiveDataProvider([
-    'query' => $query,
-    'pagination' => false,
-]); 
-        randomNumber();
+          return $this->render('index', [
+        'trivia' => $query,
+          ]);
+
+          $this->render('index', array('dataProvider' => $dataProvider));
     }
 
     /**
@@ -110,23 +92,5 @@ $dataProvider = new ActiveDataProvider([
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
-    }
-
-    /**
-     * Finds the Trivia model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return Trivia the loaded model
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    protected function findModel($id)
-    {
-        if (($model = Trivia::findOne($id)) !== null) {
-            return $model;
-        } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
-        }
-
-
     }
 }
