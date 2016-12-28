@@ -3,8 +3,6 @@
 namespace app\models;
 
 use Yii;
-use yii\db\Expression;
-use yii\data\ActiveDataProvider;
 
 /**
  * This is the model class for table "trivia".
@@ -44,19 +42,6 @@ class Trivia extends \yii\db\ActiveRecord
             'questions' => 'Questions',
             'answer' => 'Answer',
         ];
-    }
-
-
-    public function randomNumber()
-    {
-    //for generating random number
-         $length =1;
-        $chars = array_merge(range(0,9));
-        shuffle($chars);
-        $id = implode(array_slice($chars, 0,$length));
-        echo $id ;
-
-        
     }
 
 }
